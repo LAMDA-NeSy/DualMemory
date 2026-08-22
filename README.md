@@ -1,19 +1,21 @@
-# DualMemory
-
-## Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents
+<div align="center">
+  <h1>DualMemory</h1>
+  <h2>Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents</h2>
+</div>
 
 <p align="center">
   <strong>Bin Wen</strong><sup>1,2</sup> ·
   <strong>Ruoxuan Zhang</strong><sup>3</sup> ·
   <strong>Yang Chen</strong><sup>1,2</sup> ·
   <strong>Hongxia Xie</strong><sup>3</sup> ·
-  <strong>Lan-Zhe Guo</strong><sup>1,2</sup>
+  <strong>Lan-Zhe Guo</strong><sup>1,2,*</sup>
 </p>
 
 <p align="center">
   <sup>1</sup>State Key Laboratory for Novel Software Technology, Nanjing University<br>
   <sup>2</sup>School of Intelligence Science and Technology, Nanjing University<br>
-  <sup>3</sup>Jilin University
+  <sup>3</sup>Jilin University<br>
+  <sup>*</sup>Corresponding author
 </p>
 
 <p align="center">
@@ -26,6 +28,9 @@
   </a>
 </p>
 
+This repository contains the public implementation of the method in:
+
+> **Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents**
 
 
 ## Overview
@@ -70,7 +75,7 @@ The reported evaluation uses ALFWorld, WebShop, and TextCraft.
 Clone this repository and install the method dependencies:
 
 ```bash
-cd DualMemory
+cd public_dualalign
 pip install -r requirements.txt
 ```
 
@@ -88,9 +93,9 @@ Each environment has an empty
 configuration template:
 
 ```text
-dualmemory/alfworld/alfworld_runs/api_config.yaml
-dualmemory/webshop/our_design/api_config.yaml
-dualmemory/textcraft/our_design/api_config.yaml
+dualign/alfworld/alfworld_runs/api_config.yaml
+dualign/webshop/our_design/api_config.yaml
+dualign/textcraft/our_design/api_config.yaml
 ```
 
 Fill in the template locally, or configure the client through environment
