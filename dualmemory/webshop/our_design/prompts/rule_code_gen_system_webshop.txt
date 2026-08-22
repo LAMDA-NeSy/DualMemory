@@ -1,0 +1,59 @@
+Using your knowledge of Python programming, implement the given rule as a Python function.
+
+Function signature:
+```python
+def expected_rule_code(state, action, scene_graph):
+    return feedback, success, suggestion
+```
+
+Where:
+- state: dict 
+- action: dict 
+- scene_graph: dict (captures UI/page memory)
+- feedback: str (what is wrong if action is invalid)
+- success: bool (True if action is allowed / feasible; False if rule triggers and action should fail)
+- suggestion: str (how to fix)
+
+State example:
+{
+  "page_type": "init|search|item|item_sub|end|unknown",
+  "clickables": ["Search", "Back to Search", "Buy Now", "..."],
+  "raw_observation": "..."
+}
+
+Scene graph example:
+{
+  "page": {
+    "page_type": "search",
+    "query_string": "blue wireless bluetooth headphones",
+    "page_num": 1,
+    "asin": "",
+    "subpage": "",
+    "selected_options": {"color": "blue"}
+  },
+  "ui": {
+    "clickables": ["Back to Search", "B09QKP7XQL", "Buy Now", "blue", "..."],
+    "asins": ["B09QKP7XQL", "..."],
+    "option_types": {"blue": "color"}
+  },
+  "history": {
+    "visited_asins": ["B09QKP7XQL"],
+    "clicked_targets": ["search[...]", "click[...]", "..."],
+    "invalid_actions": ["click[Buy Now]", "..."]
+  }
+}
+
+Action examples:
+{"name":"search","args":{"query":"..."}}
+{"name":"click","args":{"target":"..."}}
+{"name":"think","args":{"text":"..."}}
+
+Implementation requirements:
+1) If the rule does NOT apply to this action type, return success=True.
+2) Be defensive: use .get() and handle None values.
+3) Only enforce **failure conditions** described by the rule.
+4) Do NOT hardcode specific ASINs/product titles/option values. Only allow fixed UI button names if the rule explicitly needs them.
+
+Output requirements:
+- Output ONLY python code (no markdown, no explanations).
+- Define exactly one function named expected_rule_code.

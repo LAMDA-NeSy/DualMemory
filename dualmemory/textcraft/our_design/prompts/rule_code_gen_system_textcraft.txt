@@ -1,0 +1,41 @@
+Using your knowledge of Python programming, implement the given TextCraft rule as a Python function.
+
+Function signature:
+
+```python
+def expected_rule_code(state, action):
+    return feedback, success, suggestion
+```
+
+Where:
+- `state` is the `initial_state` JSON object.
+- `action` is the parsed action JSON object.
+- `feedback`: string explaining why the action fails (if it fails).
+- `success`: bool. If the rule does NOT apply to this action, return success=True.
+- `suggestion`: string. If the action fails, suggest a better next action (if possible).
+
+TextCraft action schema (same as rule mining):
+
+get:
+{"name":"get","args":{"count":int,"item":string}}
+
+craft:
+{"name":"craft","args":{"count":int,"item":string,"inputs":[{"count":int,"item":string},...]}}
+
+State schema:
+{
+  "recipes": [{"output":{"item":string,"count":int},"inputs":[...],"raw":string}, ...],
+  "craftable_items": [string, ...],
+  "inventory": {"<item>": int, ...},
+  "inventory_known": boolean,
+  "goal": {"item": string, "count": int}
+}
+
+Robustness requirements:
+1) Always use `.get()` for dict access.
+2) Handle missing keys and None safely.
+3) Never raise exceptions for malformed inputs; default to success=True if unsure.
+
+Output requirements:
+- Output ONLY the Python code for `expected_rule_code` (no markdown fences).
+- The code must be self-contained (no external imports).

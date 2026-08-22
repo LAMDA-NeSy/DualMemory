@@ -1,0 +1,4 @@
+My information is as follows:
+given rule:
+{rule}
+

@@ -1,0 +1,18 @@
+api:
+  gpt:
+    api_key: ""
+    api_base: ""
+  other:
+    api_key: ""
+    api_base: ""
+
+models:
+  s1_trajectory: gpt-4o-2024-11-20
+  embedding: all-mpnet-base-v2
+  milestone_extraction: gpt-4o-2024-11-20
+  progress_memory_planner: gpt-4o-2024-11-20
+  progress_memory_judge: gpt-4o-2024-11-20
+  rule_miner: gpt-4o-2024-11-20
+  rule_verifier: gpt-4o-2024-11-20
+  s3_action: gpt-4o-2024-11-20
+  chat: gpt-4o-2024-11-20

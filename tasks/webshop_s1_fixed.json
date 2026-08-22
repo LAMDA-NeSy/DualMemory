@@ -1,0 +1,584 @@
+[
+  {
+    "task": "i would like a pair of size 8.5 red slippers with a rubber sole, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_0",
+    "key": {
+      "asin": "B09LQNSL48",
+      "query": "men's slippers",
+      "name": "Women's Fuzzy Faux Fur Memory Foam Slipper Cozy Flat Spa Slide Slippers Comfy Slip On Open Toe House Shoes Sandals Lined Suede Moccasin Slipper Warm Indoor Outdoor Bedroom Cross Band Soft Plush Fleece",
+      "goal_options": [
+        "red",
+        "8.5-9"
+      ]
+    }
+  },
+  {
+    "task": "i need multicolored hair bands that are non toxic, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_1",
+    "key": {
+      "asin": "B07FKB9LPH",
+      "query": "hair accessories",
+      "name": "Color Elastic Hair Bands, Teenitor 2000pcs Multi Color Hair Holder Hair Tie Elastic Rubber Bands for Baby Girls",
+      "goal_options": [
+        "b-color"
+      ]
+    }
+  },
+  {
+    "task": "i'm looking for certifies organic groceries the flavor was cacao bits, and price lower than 30.00 dollars\n[Search]\n",
+    "session_idx": "fixed_2",
+    "key": {
+      "asin": "B06XSGZKC7",
+      "query": "non-dairy milks",
+      "name": "Organic Cacao Powder, 8 Ounces - Certified, Non-GMO, Kosher, Raw, Unsweetened, Sirtfood, Bulk",
+      "goal_options": [
+        "cacao nibs"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for a color: #27 hair extensions, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_3",
+    "key": {
+      "asin": "B09BF2F9ST",
+      "query": "hair coloring products",
+      "name": "MIRMID Tape in Hair Extensions Human Hair 14\" 40g/20pcs Remy Hair Light Brown Tape in Extension Skin Weft Tape in Hair Extensions for Short Hair",
+      "goal_options": [
+        "#27"
+      ]
+    }
+  },
+  {
+    "task": "na, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_4",
+    "key": {
+      "asin": "B09PLC2QV8",
+      "query": "hair extensions, wigs & accessories",
+      "name": "JINHH Hair Extensions Braids Crotchet Braid 24 Inch Ombre Synthetic Braiding Hair Extensions 30 Roots Rainbow Crochet Hair African Braid (Color : Black Purple Blue, Size : 24 inch)",
+      "goal_options": [
+        "black blue"
+      ]
+    }
+  },
+  {
+    "task": "i want to find a mirrorless digital camera that produces high resolution photos, and comes with a color filter kit\n[Search]\n",
+    "session_idx": "fixed_5",
+    "key": {
+      "asin": "B08RF3JJ85",
+      "query": "digital cameras",
+      "name": "Nikon Z 7II Mirrorless Digital Camera 45.7MP with 24-70mm Lens (1656) USA Model + FTZ Mount + 64GB XQD Card + Corel Photo Software Software + Case + 3 Piece Filter Kit + Color Filter Kit + More",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "what deodorants do you have that are alcohol free and very long lasting?, and price lower than 30.00 dollars\n[Search]\n",
+    "session_idx": "fixed_6",
+    "key": {
+      "asin": "B013UKOWAA",
+      "query": "deodorants & antiperspirants",
+      "name": "Donald Trump Empire for Men Alcohol-Free Deodorant Stick, 2.5 Ounce (M-BB-2804)",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i am looking for low carb hight proteintrue meat snack sticks of southwest verde venison. size is 12 packs of 1 oz, and price lower than 20.00 dollars\n[Search]\n",
+    "session_idx": "fixed_7",
+    "key": {
+      "asin": "B09238H1R4",
+      "query": "meat snacks",
+      "name": "Made by True Meat Snack Sticks - Southwest Verde Venison 'Droewors' - All-Natural Ingredients – High Protein, Low Carb, Sugar Free, Gluten Free - Keto, Paleo & Whole30 Diet Friendly - 2.5oz Sticks-in-a-bag",
+      "goal_options": [
+        "southwest verde venison",
+        "1oz-12 pack"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for a 7 foot by 7 foot light weight and easy to carry fairytale themed photography background, and price lower than 70.00 dollars\n[Search]\n",
+    "session_idx": "fixed_8",
+    "key": {
+      "asin": "B07BLYRFR9",
+      "query": "film photography",
+      "name": "Leowefowa 10X10FT Luxurious Palace Backdrop Fairytale Castle Backdrops for Photography Chandelier Golden Pillars Mural Painting Arch Door Interior Vinyl Photo Background Girls Princess Studio Props",
+      "goal_options": [
+        "7x7ft"
+      ]
+    }
+  },
+  {
+    "task": "i need a cosmetic bag for my nail polish, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_9",
+    "key": {
+      "asin": "B082NWZD2B",
+      "query": "bags & cases",
+      "name": "Nander Women Cosmetic Bag Girl Makeup Bag Multifunction Ladies Bag Case Wash Toiletry Make Up Organizer Storage Travel Kit Bag Neceser - Multicolor Dragonfly Animal Green",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i'm looking for a tempered glass protector that is easy to install, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_10",
+    "key": {
+      "asin": "B09QMN5LD2",
+      "query": "video glasses",
+      "name": "atFoliX Plastic Glass Protective Film compatible with Anbernic RG552 Glass Protector, 9H Hybrid-Glass FX Glass Screen Protector of plastic",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i am looking for travel size pump bottles with lotion nozzles, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_11",
+    "key": {
+      "asin": "B083DP4MCM",
+      "query": "refillable containers",
+      "name": "3 x Refillable Airless Pump Bottles, Empty Vacuum Cream/Lotion Dispenser Container, Liquid Cosmetic Sprayer Jar Toiletries Bottles for Makeup Foundations Travel (15/30/50ml 0.5/1/1.69 oz), BPA Free",
+      "goal_options": [
+        "lotion nozzle"
+      ]
+    }
+  },
+  {
+    "task": "i'm looking for a 8 ounce of quality ingredient ranch dressing, and price lower than 140.00 dollars\n[Search]\n",
+    "session_idx": "fixed_12",
+    "key": {
+      "asin": "B000VCBXN0",
+      "query": "refrigerated snack packs & lunches",
+      "name": "Kraft Classic Ranch Salad Dressing (8 fl oz Bottle)",
+      "goal_options": [
+        "buttermilk"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for dark denim color ethylene vinyl ultra train of size 10, 3rd generation for  men, and price lower than 160.00 dollars\n[Search]\n",
+    "session_idx": "fixed_13",
+    "key": {
+      "asin": "B08B1MCFKL",
+      "query": "men's athletic shoes",
+      "name": "Salewa Ultra Train 3 - Men's",
+      "goal_options": [
+        "dark denim | red orange",
+        "10"
+      ]
+    }
+  },
+  {
+    "task": "looking for a 2 pack of granola that is gluten free. it needs to be non gmo and shelf stable, and price lower than 120.00 dollars\n[Search]\n",
+    "session_idx": "fixed_14",
+    "key": {
+      "asin": "B093TGY82Q",
+      "query": "breakfast foods",
+      "name": "Tattooed Chef Organic Acai Bowls (with Granola Packets) - Frozen Fruit with Strawberries, Banana, Blueberries - Gluten-Free, Vegan - Healthy Snack, 8 Oz Each, 2 Boxes of 6 Bowls (12 Total)",
+      "goal_options": [
+        "2 pack"
+      ]
+    }
+  },
+  {
+    "task": "i want to buy a birthday cake topper, and price lower than 30.00 dollars\n[Search]\n",
+    "session_idx": "fixed_15",
+    "key": {
+      "asin": "B08N424KPN",
+      "query": "toothpicks",
+      "name": "Sweet One Strawberry 1st Cake Topper, Red Glitter Sweet One Birthday Cake Decorations for 1st Birthday, 1st Anniversary, Strawberry Theme Party Hawaiian Luau Tutti Frutti Party Summer Garden Party",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i'm looking for a classic styling salon chair, hydraulic barber chair with wider seat & heavy duty hydraulic pump, also it should have beauty salon spa shampoo equipment, choose the gold color, and price lower than 920.00 dollars\n[Search]\n",
+    "session_idx": "fixed_16",
+    "key": {
+      "asin": "B09MJXZ9PQ",
+      "query": "salon & spa equipment",
+      "name": "Classic Styling Salon Chair Hair Hydraulic Barber Chair for Hair Salon with Wider Seat & Heavy Duty Hydraulic Pump, Beauty Salon Spa Shampoo Equipment (Color : Gold)",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i'm looking for 67.5 ounce cheez-it snack pack, and price lower than 130.00 dollars\n[Search]\n",
+    "session_idx": "fixed_17",
+    "key": {
+      "asin": "B008QZZ88K",
+      "query": "cheese assortments & samplers",
+      "name": "Cheez-It Snack Pack, Original, 67.5 Ounce",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i want to buy a pair of machine washable jeans with a 33 inch waist and a 30 inch length. they should come in a \"granite\" color, and price lower than 90.00 dollars\n[Search]\n",
+    "session_idx": "fixed_18",
+    "key": {
+      "asin": "B07MWML5S1",
+      "query": "men's jeans",
+      "name": "Wrangler mens 13mwz Cowboy Cut Original Fit Jean",
+      "goal_options": [
+        "granite",
+        "33w x 30l"
+      ]
+    }
+  },
+  {
+    "task": "looking for long sleeve and loose fit sweatshirt for women also choose colour gray, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_19",
+    "key": {
+      "asin": "B09N8PRHNG",
+      "query": "women's activewear",
+      "name": "Sweatshirt for Women Casual Folk Pullover Tops Long Sleeve Lapel Zip Up Hoodies Stylish Loose Fit Tunic",
+      "goal_options": [
+        "gray"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for slim fit men jean.it shoud be machine washable, and price lower than 130.00 dollars\n[Search]\n",
+    "session_idx": "fixed_20",
+    "key": {
+      "asin": "B07MWSX8Z7",
+      "query": "men's pants",
+      "name": "Wrangler Men's Retro Relaxed Fit Boot Cut Jean",
+      "goal_options": [
+        "slim"
+      ]
+    }
+  },
+  {
+    "task": "i'm looking for a sky blue ring holder for my smartphone, if possible with wireless charging, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_21",
+    "key": {
+      "asin": "B08QTR1Y67",
+      "query": "cell phones",
+      "name": "i-Blason Cell Phone Finger Ring Holder - Universal - Kickstand with 360° Rotation and 180° Flip Magnetic Car Mountable Compatible with iPhone 13 Pro Max/iPhone 12/Galaxy S21/Pixel 6 (Marble)",
+      "goal_options": [
+        "sky blue"
+      ]
+    }
+  },
+  {
+    "task": "i'm looking for coaxial cable for video accessories for electronics, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_22",
+    "key": {
+      "asin": "B07CQB2FZK",
+      "query": "satellite television",
+      "name": "200ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable Nickel-Plated Brass Connector 75 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE",
+      "goal_options": [
+        "burial 3ghz rg11, weather seal - orange"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for a 3'x5' size of contemporary style  area rugs, and price lower than 170.00 dollars\n[Search]\n",
+    "session_idx": "fixed_23",
+    "key": {
+      "asin": "B08DJB4MS5",
+      "query": "area rugs",
+      "name": "Abani Rugs Modern 6' x 9' Black & White Floral Swirl Area Rug - Contemporary Geometric 3D Rug, Arto Collection",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i am looking for a pair of sky blue curtains for my living room, and price lower than 30.00 dollars\n[Search]\n",
+    "session_idx": "fixed_24",
+    "key": {
+      "asin": "B01MDPBUWN",
+      "query": "window coverings",
+      "name": "Deconovo White Sheer Curtains 84 Inch Length Rod Pocket Voile Drape Curtains for Bedroom 52x84 Inch 2 Panels",
+      "goal_options": [
+        "sky blue"
+      ]
+    }
+  },
+  {
+    "task": "i want to find a doctor's stool with cinder-colored fabric. it needs to be 18.5 inches to 24 inches tall and be height adjustable, and price lower than 130.00 dollars\n[Search]\n",
+    "session_idx": "fixed_25",
+    "key": {
+      "asin": "B0033YLK7M",
+      "query": "bar stools",
+      "name": "Perch Chrome Walter Rolling Height Adjustable Doctor's Stool with Back for Hardwood or Tile | Workbench Height | 300-Pound Weight Capacity | 12 Year Warranty (Adobe White Vinyl)",
+      "goal_options": [
+        "cinder fabric",
+        "desk height 18.5\"- 24\""
+      ]
+    }
+  },
+  {
+    "task": "i'm looking for a 32 ounce package of gluten free almond flour, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_26",
+    "key": {
+      "asin": "B09913B3WZ",
+      "query": "pantry staples",
+      "name": "Fisher Almond Flour, 32 Ounces, Naturally Gluten Free, No Preservatives, Non-GMO, Keto, Paleo, Vegan Friendly, Unblanched, Super Finely Ground, natural",
+      "goal_options": [
+        "32 ounce"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for a super soft fleece throw that has the constellation zodiac scorpio color, and price lower than 70.00 dollars\n[Search]\n",
+    "session_idx": "fixed_27",
+    "key": {
+      "asin": "B09PR7H15R",
+      "query": "throw blankets",
+      "name": "Constellation Zodiac Taurus Blanket Soft Plush Warm Throw Blanket Gifts for Women Girl Solar, Star, Astronomy, Astrology & Astronaut Lovers for Bed Sofa Couch Decor 80x60in for Adults",
+      "goal_options": [
+        "constellation zodiac scorpio"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for 2 pack of 20ft long quadshield solid copper black color indoor and outdoor coaxial cable, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_28",
+    "key": {
+      "asin": "B07CQB2FZK",
+      "query": "satellite television",
+      "name": "200ft Black TRI-Shield Indoor Outdoor RG-6 Coaxial Cable Nickel-Plated Brass Connector 75 Ohm (Satellite TV, Broadband Internet, Ham Radio, OTA HD Antenna Coax) Assembled in USA PHAT SATELLITE",
+      "goal_options": [
+        "quadshield solid copper - black",
+        "20ft - 2 pack"
+      ]
+    }
+  },
+  {
+    "task": "i need a clip set hair extensions with stainless steel, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_29",
+    "key": {
+      "asin": "B08CXD2VHG",
+      "query": "hair extensions, wigs & accessories",
+      "name": "FU SHEN Clips for Hair Extensions DIY Clip in on Hair Extension Wigs Clip Set with Rubber 32mm U-Shape Snap Clips 30 Pcs 9 Teeth Black Clip for Hair Extension Wigs Clips Weft Hairpiece DIY Clips Set Include Needles Thread and Soft Ruler",
+      "goal_options": [
+        "clip set"
+      ]
+    }
+  },
+  {
+    "task": "please help me find an 8oz pack of medical body scrub exfolient that is suitable for sensitive skin, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_30",
+    "key": {
+      "asin": "B08GNS58PQ",
+      "query": "body makeup",
+      "name": "First Aid Beauty KP Bump Eraser Body Scrub Exfoliant for Keratosis Pilaris with 10% AHA 2 oz.",
+      "goal_options": [
+        "8 ounce (pack of 1)"
+      ]
+    }
+  },
+  {
+    "task": "i need a purple eyeshadow set, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_31",
+    "key": {
+      "asin": "B083GQMJS3",
+      "query": "makeup palettes",
+      "name": "KOLIGHT Pack of 20pcs Cosmetic Eye Shadow Sponge Eyeliner Eyebrow Lip Nose Foundation Powder Makeup Brushes Sets (purple)",
+      "goal_options": [
+        "florescence+purple"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for men's dark clay color ankle strap sandals, and price lower than 190.00 dollars\n[Search]\n",
+    "session_idx": "fixed_32",
+    "key": {
+      "asin": "B085LSYPYK",
+      "query": "men's sandals",
+      "name": "ECCO Men's Ankle-Strap Flat Sandal",
+      "goal_options": [
+        "dark clay"
+      ]
+    }
+  },
+  {
+    "task": "can you find me a shelf stable potato side dish?  i want something that i can cook in the microwave, and price lower than 50.00 dollars\n[Search]\n",
+    "session_idx": "fixed_33",
+    "key": {
+      "asin": "B000V1JVAI",
+      "query": "deli & prepared foods",
+      "name": "HORMEL COMPLEATS Meatloaf & Gravy With Mashed Potatoes Microwave Tray, 9 oz. (6 Pack)",
+      "goal_options": [
+        "microwave meals"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for a 9 drawer dresser with a bronze finish\n[Search]\n",
+    "session_idx": "fixed_34",
+    "key": {
+      "asin": "B06XR97NGM",
+      "query": "dressers",
+      "name": "Modus Furniture Paragon Eight-Drawer Dresser, Black",
+      "goal_options": [
+        "9-drawer"
+      ]
+    }
+  },
+  {
+    "task": "i would like a 8 ft 6 in x 12 ft rectangular navy rug for my living room, and price lower than 340.00 dollars\n[Search]\n",
+    "session_idx": "fixed_35",
+    "key": {
+      "asin": "B00G4ITP30",
+      "query": "area rugs",
+      "name": "SAFAVIEH Milan Shag Collection SG180 Solid Non-Shedding Living Room Bedroom Dining Room Entryway Plush 2-inch Thick Area Rug, 8' x 10', Ivory",
+      "goal_options": [
+        "navy",
+        "rectangular",
+        "8 ft 6 in x 12 ft"
+      ]
+    }
+  },
+  {
+    "task": "i want a 2022 dell g5 gaming desktop pc intel 6-core i5-10400f with windows 11 home\n[Search]\n",
+    "session_idx": "fixed_36",
+    "key": {
+      "asin": "B09JRCG3K3",
+      "query": "pc",
+      "name": "2022 DELL G5 Gaming Desktop PC Intel 6-Core i5-10400F 16GB DDR4 RAM 256GB M.2 NVMe SSD NVIDIA GeForce GTX 1650 4GB GDDR5 HDMI DP DVI USB C WiFi AX BT RJ-45 Windows 10 Home Wired Keyboard&Mouse",
+      "goal_options": [
+        "windows 11 home"
+      ]
+    }
+  },
+  {
+    "task": "i am looking for string curtain of rose color that are eco friendly and easy to install, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_37",
+    "key": {
+      "asin": "B07PQJ1PF2",
+      "query": "window coverings",
+      "name": "HSYLYM String Curtain with Pellet Light Weight Room Accessories,Fit for Doors and Windows,Tan,100x220cm(39\" Width x 86\" Length)",
+      "goal_options": [
+        "rose"
+      ]
+    }
+  },
+  {
+    "task": "im looking for women’s beige skechers go walk 5-lucky sneaker in a size 10, and price lower than 110.00 dollars\n[Search]\n",
+    "session_idx": "fixed_38",
+    "key": {
+      "asin": "B07N13MK4G",
+      "query": "women's fashion sneakers",
+      "name": "Skechers Women's Go Walk 5-Lucky Sneaker",
+      "goal_options": [
+        "beige taupe textile trim tpe",
+        "10"
+      ]
+    }
+  },
+  {
+    "task": "i would like a living room wall lamp that is in antique silver and has one light, and price lower than 150.00 dollars\n[Search]\n",
+    "session_idx": "fixed_39",
+    "key": {
+      "asin": "B07CT9LC6Y",
+      "query": "sconces",
+      "name": "Capital Lighting 8301CH-461 Baxter Clear Glass Wall Sconce, 1-Light 100 Watt, 10\"H x 7\"W, Chrome",
+      "goal_options": [
+        "antique silver",
+        "1-light"
+      ]
+    }
+  },
+  {
+    "task": "i am looking  a  hyaluronic acid deep conditioner for hair treatment of dry har to improve smoothness, and price lower than 130.00 dollars\n[Search]\n",
+    "session_idx": "fixed_40",
+    "key": {
+      "asin": "B09K8D4JRX",
+      "query": "scalp treatments",
+      "name": "The INKEY List Hyaluronic Acid Hydrating Hair Treatment to Reduce Frizz and Brittlness to Improve Shine 100ml, (IH001KM)",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "zahara brought a cup of green tea, and price lower than 130.00 dollars\n[Search]\n",
+    "session_idx": "fixed_41",
+    "key": {
+      "asin": "B00OIUBDLI",
+      "query": "deodorants & antiperspirants",
+      "name": "Dove Advanced Care Dry Spray Antiperspirant Deodorant For Women Cool Essentials 48 Hour Deodorant Protection 3.8 oz",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i want some low rise active shorts that are in a medium and are black charcoal colored, and price lower than 40.00 dollars\n[Search]\n",
+    "session_idx": "fixed_42",
+    "key": {
+      "asin": "B078HW45S6",
+      "query": "women's shorts",
+      "name": "Emmalise Women's Active Yoga Shorts Low Rise Fold Over Workout Dance Pant",
+      "goal_options": [
+        "2pk - black charcoal",
+        "medium"
+      ]
+    }
+  },
+  {
+    "task": "i'm looking for a twin size bed that soft beds for bedroom, and price lower than 400.00 dollars\n[Search]\n",
+    "session_idx": "fixed_43",
+    "key": {
+      "asin": "B09SG3LJLK",
+      "query": "bedframes",
+      "name": "Bed Frames, Loft Bed Twin Size Metal Bed Frame with L-Shaped Desk and Storage Shelves/Ladder and Slats, Space Saving Design Sturdy Platform Bed Frame, Easy Assembly Loft Beds for Bedroom Dormitory",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i am looking for a waterproof ricoh camera with optical zoom, and price lower than 460.00 dollars\n[Search]\n",
+    "session_idx": "fixed_44",
+    "key": {
+      "asin": "B086H3TL7M",
+      "query": "digital cameras",
+      "name": "Ricoh Waterproof Digital Camera WG-40 (Black) (Intl Model) with Memory Kit",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i am looking for a black  knee high mid-calf, and price lower than 70.00 dollars\n[Search]\n",
+    "session_idx": "fixed_45",
+    "key": {
+      "asin": "B09FDW71SF",
+      "query": "women's outdoor shoes",
+      "name": "Men Boots Casual Work Boots Pointed Toe Low Heel Stitching Boots For Women Wide Calf Fashion Square Heel Embroidered Cowboy Boots For Women Comfortable Thick Heel Outdoor Boots Mid-Pipe Couple Boots",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i would like to buy cell phone signal booster which has high speed, and price lower than 200.00 dollars\n[Search]\n",
+    "session_idx": "fixed_46",
+    "key": {
+      "asin": "B09KGJQQ4B",
+      "query": "signal boosters",
+      "name": "5G Cell Phone Signal Booster for Home and Office Compatible with All US Carriers Verizon, AT&T, Straight Talk | Boost 2G 3G 4G LTE 5G Data and Calls | FCC Approved",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "i want a fast charging smartphone with 64 gb memory storage capacity. pick a blue one, and price lower than 180.00 dollars\n[Search]\n",
+    "session_idx": "fixed_47",
+    "key": {
+      "asin": "B08WJP82ZT",
+      "query": "cell phones",
+      "name": "Tracfone Samsung Galaxy A51 4G LTE prepaid Smartphone (Locked) - Black - 128GB - Sim Card Included - CDMA",
+      "goal_options": [
+        "blue",
+        "64 gb"
+      ]
+    }
+  },
+  {
+    "task": "i like motion detection  machine in white color, and price lower than 80.00 dollars\n[Search]\n",
+    "session_idx": "fixed_48",
+    "key": {
+      "asin": "B09DPXST7F",
+      "query": "video surveillance",
+      "name": "SwitchBot Security Indoor Camera Bundle with Contact Sensor - 1080P Smart WiFi Pet Camera for Home Security with Night Vision, Two-Way Audio, Add SwitchBot Hub Mini Compatible with Alexa",
+      "goal_options": []
+    }
+  },
+  {
+    "task": "get me a brushed nickel finish 3-light chandelier, and price lower than 60.00 dollars\n[Search]\n",
+    "session_idx": "fixed_49",
+    "key": {
+      "asin": "B073R3XKJT",
+      "query": "kitchen islands",
+      "name": "Westinghouse Lighting 6334600 Boswell One-Light LED Indoor Mini Pendant, Brushed Nickel Finish with Prismatic Lens",
+      "goal_options": [
+        "3-light chandelier"
+      ]
+    }
+  }
+]

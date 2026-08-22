@@ -1,0 +1,68 @@
+WebShop
+Instruction:
+i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and price lower than 50.00 dollars
+[Search]
+
+> search[3 ounce bright citrus deodorant sensitive skin]
+[Back to Search]
+Page 1 (Total results: 50)
+[Next >]
+[B078GWRC1J]
+Bright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy and Breastfeeding, Contains Organic Calendula 3-Ounce
+$10.99
+[B078GTKVXY]
+Ginger Fresh Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy and Breastfeeding, Contains Organic Calendula 3-Ounce
+$10.99
+
+> click[B078GWRC1J]
+[Back to Search]
+[< Prev]
+scent [assorted scents][bright citrus][calming lavender]
+size [3 ounce (pack of 1)][3-ounce (2-pack)]
+Price: $10.99
+[Buy Now]
+
+> click[bright citrus]
+You have clicked bright citrus.
+
+> click[3 ounce (pack of 1)]
+You have clicked 3 ounce (pack of 1).
+
+> click[Buy Now]
+Your score (min 0.0, max 1.0): 1.0
+
+WebShop
+Instruction:
+i would like a 3 ft long copper coaxial cable, and price lower than 60.00 dollars
+[Search]
+
+> search[3 ft copper coaxial cable]
+[Back to Search]
+Page 1 (Total results: 50)
+[Next >]
+[B00UED11RE] DIRECTV Approved RG6 Coaxial Cable ... 500' FT ... $99.31
+[B013SM2BFS] 200 Ft RG6 Coaxial Cable ... $50.00
+
+> think[These results are the wrong length. I need a new query. I must click Back to Search before searching again.]
+OK.
+
+> click[Back to Search]
+WebShop
+Instruction:
+i would like a 3 ft long copper coaxial cable, and price lower than 60.00 dollars
+[Search]
+
+> search[RG6 coaxial cable 3 ft solid copper]
+[Back to Search]
+Page 1 (Total results: 50)
+[Next >]
+[B0EXAMPLE01] RG6 Coaxial Cable, 3ft, Solid Copper ... $8.99
+
+> click[B0EXAMPLE01]
+[Back to Search]
+[< Prev]
+Price: $8.99
+[Buy Now]
+
+> click[Buy Now]
+Your score (min 0.0, max 1.0): 1.0

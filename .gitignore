@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.log
+.DS_Store
+
+runs/
+symbolic_knowledge/
+traj_data/
+tmp/
+results/*
+!results/evaluation_results.csv
+!results/cost_s1_performance.csv
+!results/final_summary.json
+api_config.local.yaml
+.env

@@ -1,0 +1,105 @@
+You are given a WebShop shopping task and an ideal action trajectory.
+Your job:
+1) Identify key milestones (subgoals) to complete the task.
+2) Segment the action trajectory into milestone-aligned groups.
+3) For each milestone, list the indices of actions that belong to that milestone.
+
+Instructions:
+- Only use the ACTIONS (ignore observations).
+- Milestones should be concise, high-level, and actionable, but MUST reflect WebShop's navigation patterns.
+- Do NOT include milestone steps that depend on copying specific ASINs or option values; use generic wording.
+- WebShop is iterative: a search may not find the right item. The trajectory may repeat cycles like:
+  - click[Back to Search] -> search[...]
+  - browsing result pages via click[Next >] / click[< Prev]
+  - opening one or more candidate product pages and then returning to search to try again
+  Write milestones in a LOOP/STOP form using "until ..." (e.g., "Iteratively search and refine the query until results contain a promising candidate under the price limit").
+- Do NOT over-segment repeated iterations. If the trajectory repeats a pattern (search/paginate/open candidate/back/re-search), group the whole loop into 1 milestone with one "until ..." stopping condition, and assign ALL involved action indices to that milestone.
+- Prefer 2–5 milestones total. Split only on real phase changes, such as:
+  - switching from exploring (search/pagination/open-and-reject) to committing to a final candidate product page
+  - switching from verifying details (Description/Features/Reviews/Attributes + < Prev) to selecting options
+  - switching from selecting options to purchasing
+- Recommended milestone templates (choose what fits the trajectory):
+  1) "Iteratively search and browse results (Back to Search -> search, Next/< Prev) until you reach a promising candidate product page that likely matches constraints"
+  2) "Inspect candidate product(s) (open product pages; check Description/Features/Reviews/Attributes; use < Prev to return) until you confirm one product satisfies all constraints (type/attributes/price)"
+  3) "Select required options (e.g., color/size/pack/material/length) until the chosen configuration matches constraints and Buy Now is available"
+  4) "Purchase the product (Buy Now)"
+- Do NOT create a milestone that is only a think[...] action. If think[...] appears, attach it to the most relevant surrounding milestone.
+- If the trajectory contains any line that is not a valid action (not matching the Action API), ignore it.
+- Output MUST be valid JSON.
+
+Action API:
+- search[query]
+- click[target]
+- think[text]
+
+Example 1:
+Task: i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and price lower than 50.00 dollars
+Trajectory:
+1. search[3 ounce bright citrus deodorant sensitive skin]
+2. click[B078GWRC1J]
+3. click[bright citrus]
+4. click[3 ounce (pack of 1)]
+5. click[Buy Now]
+Output:
+[
+  {"milestone": "Iteratively search and open a promising product page until you reach a candidate that likely matches constraints (3 ounce, bright citrus, sensitive skin, price < $50)", "actions": [1, 2]},
+  {"milestone": "Select required options until the chosen configuration matches constraints", "actions": [3, 4]},
+  {"milestone": "Purchase the product", "actions": [5]}
+]
+
+Example 2:
+Task: i need a blue wireless bluetooth headphones, and price lower than 60.00 dollars
+Trajectory:
+1. search[blue wireless bluetooth headphones]
+2. click[B09QKP7XQL]
+3. click[blue]
+4. click[Buy Now]
+Output:
+[
+  {"milestone": "Iteratively search and open a promising product page until you reach a candidate that likely matches constraints (blue, wireless, bluetooth, price < $60)", "actions": [1, 2]},
+  {"milestone": "Select required options until the chosen configuration matches constraints", "actions": [3]},
+  {"milestone": "Purchase the product", "actions": [4]}
+]
+
+Example 3 (iterative re-search):
+Task: buy a 20ft video cable that has aluminum alloy, and price lower than 60.00 dollars
+Trajectory:
+1. search[20ft video cable aluminum alloy]
+2. click[Next >]
+3. click[B0XXXXXXX]
+4. click[Back to Search]
+5. search[20ft HDMI cable aluminum alloy price under 60]
+6. click[B0YYYYYYY]
+7. click[Buy Now]
+Output:
+[
+  {"milestone": "Iteratively search and browse results (Back to Search -> search, Next/< Prev, open candidates) until you reach a promising product page that likely matches constraints (20ft, aluminum alloy, price < $60)", "actions": [1, 2, 3, 4, 5, 6]},
+  {"milestone": "Purchase the product", "actions": [7]}
+]
+
+Example 4 (verify details then choose options):
+Task: i want unscented sunscreen lotion for dry skin, and price lower than 40.00 dollars
+Trajectory:
+1. search[unscented sunscreen lotion dry skin]
+2. click[B0AAAAAAA]
+3. click[Attributes]
+4. click[< Prev]
+5. click[Description]
+6. click[< Prev]
+7. click[Back to Search]
+8. search[unscented sunscreen lotion for dry skin under 40]
+9. click[B0BBBBBBB]
+10. click[unscented]
+11. click[Buy Now]
+Output:
+[
+  {"milestone": "Iteratively search, open candidates, and refine the query until you find a promising product that likely matches constraints (unscented, dry skin, price < $40)", "actions": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
+  {"milestone": "Select required options until the chosen configuration matches constraints", "actions": [10]},
+  {"milestone": "Purchase the product", "actions": [11]}
+]
+
+Input:
+Task: {TASK}
+Trajectory:
+{TRAJECTORY}
+Now output the milestone list in the same JSON format:

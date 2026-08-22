@@ -1,0 +1,48 @@
+You are given a household manipulation task and its ideal action trajectory. Your job is to:
+1 Identify the key milestones (subgoals or logical steps) necessary to complete the task.
+2 Divide the action trajectory into segments, where each segment corresponds to a milestone.
+3 For each milestone, list the indices of the actions (from the trajectory) that belong to that milestone.
+Instructions:
+- Only consider the actions (ignore the observations) when mapping actions to milestones.
+- Each milestone should represent a clear, meaningful subgoal within the overall task.
+- The output should be a JSON array, where each object contains:
+- "milestone": a concise description of the subgoal.
+- "actions": a list of action indices.
+- - CRITICAL: Do NOT introduce any objects, appliances, or locations in the milestones that do not explicitly appear in the TASK. For example, if the TASK is "heat some mug and put it in coffeemachine", do NOT generate a milestone like "Retrieve the mug from the fridge" because "fridge" is not mentioned in the task.
+
+Example 1:
+Input:
+- Task: put a egg in microwave.
+- Trajectory:
+1. go to fridge 1
+2. open fridge 1
+3. take egg 1 from fridge 1
+4. go to microwave 1
+5. open microwave 1
+6. put egg 1 in/on microwave 1
+Output:
+[
+  {{"milestone": "Find the egg", "actions": [1, 2, 3]}},
+  {{"milestone": "Go to the microwave", "actions": [4, 5]}},
+  {{"milestone": "Put the egg in the microwave", "actions": [6]}}
+]
+Example 2:
+Input:
+- Task: put a clean soapbar in countertop.
+- Trajectory:
+1. go to sinkbasin 1
+2. take soapbar 1 from sinkbasin 1
+3. clean soapbar 1 with sinkbasin 1
+4. go to countertop 1
+5. put soapbar 1 in/on countertop 1
+Output:
+[
+  {{"milestone": "Pick up the soapbar", "actions": [1, 2]}},
+  {{"milestone": "Clean the soapbar", "actions": [3]}},
+  {{"milestone": "Place the soapbar on the countertop", "actions": [4, 5]}}
+]
+Input:
+Task: {TASK}
+Trajectory:
+{TRAJECTORY}
+Now, please generate the milestone list and map the actions to each milestone in the same format:

@@ -1,0 +1,68 @@
+You are a rule miner tasked with extracting and improving **action feasibility rules** for the WebShop environment.
+
+Each transition is a dictionary with:
+- initial_state: a JSON object describing the current page/state (lightweight)
+- action: a JSON object describing the proposed action
+- action_result: a boolean indicating whether the action executed successfully (True) or was invalid (False)
+- sg_info (optional): a scene-graph snapshot capturing UI/page memory (richer than initial_state)
+
+Your job:
+1) Verify the given rules against the provided transitions.
+2) Fix any conflicting rules (if possible).
+3) Mine additional NEW rules.
+
+IMPORTANT:
+- Only generate rules for **when an action will fail** (i.e., action_result == False).
+- Rules must be **general/universal**. Do NOT reference specific ASINs, product titles, or option values.
+- It is allowed to reference fixed UI button names: "Buy Now", "Back to Search", "Next >", "< Prev", "Description", "Features", "Reviews", "Attributes".
+- Prefer using the provided state fields to define conditions.
+
+Action API (from transitions):
+- search[query]  -> action JSON: {"name":"search","args":{"query":"..."}}
+- click[target]  -> action JSON: {"name":"click","args":{"target":"..."}}
+- think[text]    -> action JSON: {"name":"think","args":{"text":"..."}}
+
+State format (example):
+{
+  "page_type": "init|search|item|item_sub|end|unknown",
+  "clickables": ["Search", "Back to Search", "B078...", "..."],
+  "raw_observation": "..."
+}
+
+sg_info format (example; you may use this for more precise rules):
+{
+  "page": {
+    "page_type": "...",
+    "query_string": "...",
+    "page_num": 1,
+    "asin": "B09....",
+    "subpage": "Description|Features|Reviews|Attributes|",
+    "selected_options": {"color": "blue"}
+  },
+  "ui": {
+    "clickables": [...],
+    "asins": [...],
+    "option_types": {"blue": "color"}
+  },
+  "history": {
+    "visited_asins": [...],
+    "clicked_targets": [...],
+    "invalid_actions": [...]
+  }
+}
+
+Rules should be written in natural language like:
+"Rule 1: For action click, if <condition>, the action will fail; Checking Method: <how to check in state/action>"
+
+You MUST respond with a single JSON object (parsable by python json.loads), with keys:
+{
+  "verified_rules": [...],
+  "conflicting_rules": [...],
+  "improved_rules": [...],
+  "new_rules": [...],
+  "final_rules": [...]
+}
+
+Guidance:
+- Focus on failure causes like: wrong page_type, clicking a target not present in state.clickables, invalid special buttons on wrong pages, empty/invalid search query format, etc.
+- Each rule MUST include a concrete Checking Method using state/action fields.

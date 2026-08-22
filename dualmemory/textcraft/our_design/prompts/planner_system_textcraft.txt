@@ -1,0 +1,89 @@
+You are given a TextCraft crafting problem and an ideal action trajectory.
+Your job:
+1) Identify key milestones (subgoals) to complete the task.
+2) Segment the action trajectory into milestone-aligned groups.
+3) For each milestone, list the indices of actions that belong to that milestone.
+
+Instructions:
+- Only use the ACTIONS (ignore observations).
+- The task text includes "Crafting commands:" (recipes) and "Goal:". Use the crafting commands to understand prerequisites and avoid impossible milestones.
+- Milestones should be concise, high-level, and actionable.
+- Prefer 3-8 milestones total. Split only on real phase changes, e.g.:
+  - gathering prerequisites (get ...)
+  - crafting intermediate items
+  - crafting the final goal item
+- Use stable phase-level wording because these milestone texts will later be used for retrieval:
+  - gather-only phase: "Gather materials for <next crafted item/phase> (<item1>, <item2>, ...)"
+  - short gather+craft phase: "Gather <primitive item(s)> and craft <intermediate item>"
+  - craft phase: "Craft <count> <item> ..." or "Craft <item> using ..."
+  - loop phase: "Repeatedly ... until ..."
+- Do NOT emit one milestone per simple ingredient get when those gets belong to the same upcoming craft phase.
+- Avoid atomic milestones like "Get 1 stick", "Get 1 flint", "Get 1 feather" if they should be grouped as one gather phase for the next craft.
+- Avoid ad-hoc phrasing like "Get 1 poppy and craft 1 red dye". Prefer the canonical styles above so similar tasks use similar milestone wording.
+- If the trajectory repeats a pattern (e.g., repeated dye->wool crafting), do NOT over-segment; group the whole loop into 1 milestone and write it in a LOOP/STOP form using "until ...", and assign ALL involved action indices to that milestone.
+- Do NOT create a milestone that is only an inventory / think step. If inventory/think appears, attach it to the most relevant surrounding milestone.
+- Action indices MUST be 1-based (match the numbered trajectory).
+- If the trajectory contains any line that is not a valid action, ignore it.
+- Output MUST be valid JSON: output ONLY a JSON array (no extra text).
+
+Action API:
+- get <count> <item>
+- craft <count> <item> using <count> <item>, <count> <item>, ...
+- inventory
+- think: <text>
+
+Example (real trajectory):
+Task:
+Crafting commands:
+craft 4 oak planks using 1 oak logs
+craft 4 stick using 2 planks
+craft 1 white wool using 4 string
+craft 1 red dye using 1 poppy
+craft 1 red wool using 1 red dye, 1 white wool
+craft 1 red banner using 6 red wool, 1 stick
+
+Goal: craft red banner.
+Trajectory:
+1. get 1 oak logs
+2. craft 4 oak planks using 1 oak logs
+3. craft 4 stick using 2 oak planks
+4. get 24 string
+5. craft 1 white wool using 4 string
+6. craft 1 white wool using 4 string
+7. craft 1 white wool using 4 string
+8. craft 1 white wool using 4 string
+9. craft 1 white wool using 4 string
+10. craft 1 white wool using 4 string
+11. get 1 poppy
+12. craft 1 red dye using 1 poppy
+13. craft 1 red wool using 1 red dye, 1 white wool
+14. get 1 poppy
+15. craft 1 red dye using 1 poppy
+16. craft 1 red wool using 1 red dye, 1 white wool
+17. get 1 poppy
+18. craft 1 red dye using 1 poppy
+19. craft 1 red wool using 1 red dye, 1 white wool
+20. get 1 poppy
+21. craft 1 red dye using 1 poppy
+22. craft 1 red wool using 1 red dye, 1 white wool
+23. get 1 poppy
+24. craft 1 red dye using 1 poppy
+25. craft 1 red wool using 1 red dye, 1 white wool
+26. get 1 poppy
+27. craft 1 red dye using 1 poppy
+28. craft 1 red wool using 1 red dye, 1 white wool
+29. craft 1 red banner using 6 red wool, 1 stick
+Output:
+[
+  {"milestone": "Craft basic materials needed for the banner (planks, stick)", "actions": [1, 2, 3]},
+  {"milestone": "Craft 6 white wool from string", "actions": [4, 5, 6, 7, 8, 9, 10]},
+  {"milestone": "Repeatedly make red dye from poppy and combine with white wool until you have 6 red wool", "actions": [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]},
+  {"milestone": "Craft the red banner", "actions": [29]}
+]
+
+Input:
+Task (Crafting commands + Goal):
+{TASK}
+Trajectory:
+{TRAJECTORY}
+Now output the milestone list in the same JSON format:

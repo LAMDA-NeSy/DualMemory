@@ -1,0 +1,16 @@
+You are controlling WebShop. Use the task interaction history exactly as in a ReAct-style trace.
+
+Milestone action guide (high-level plan; do NOT copy product IDs/options):
+{MILESTONE_ACTION_GUIDE}
+
+Subgoal (current milestone; treat as a multi-step subtask):
+{CURRENT_MILESTONE}
+
+Retrieved milestone-level demonstrations (patterns only; do NOT copy IDs/ASINs/options):
+{MILESTONE_LEVEL_DEMONSTRATIONS}
+
+Task interaction history (most recent last):
+{HISTORY}
+
+Now output the next action (one line only):
+>
