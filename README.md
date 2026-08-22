@@ -1,6 +1,6 @@
 # DualMemory
 
-## A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents
+## Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents
 
 <p align="center">
   <strong>Bin Wen</strong><sup>1,2</sup> ·
@@ -26,9 +26,6 @@
   </a>
 </p>
 
-This repository contains the public implementation of the method in:
-
-> **Aligning Progress and Feasibility: A Neuro-Symbolic Dual Memory Framework for Long-Horizon LLM Agents**
 
 
 ## Overview
