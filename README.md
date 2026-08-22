@@ -73,7 +73,7 @@ The reported evaluation uses ALFWorld, WebShop, and TextCraft.
 Clone this repository and install the method dependencies:
 
 ```bash
-cd public_dualalign
+cd DualMemory
 pip install -r requirements.txt
 ```
 
@@ -91,9 +91,9 @@ Each environment has an empty
 configuration template:
 
 ```text
-dualign/alfworld/alfworld_runs/api_config.yaml
-dualign/webshop/our_design/api_config.yaml
-dualign/textcraft/our_design/api_config.yaml
+dualmemory/alfworld/alfworld_runs/api_config.yaml
+dualmemory/webshop/our_design/api_config.yaml
+dualmemory/textcraft/our_design/api_config.yaml
 ```
 
 Fill in the template locally, or configure the client through environment
