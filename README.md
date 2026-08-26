@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <sup>1</sup>State Key Laboratory for Novel Software Technology, Nanjing University<br>
+  <sup>1</sup>National Key Laboratory for Novel Software Technology, Nanjing University<br>
   <sup>2</sup>School of Intelligence Science and Technology, Nanjing University<br>
   <sup>3</sup>Jilin University<br>
   <sup>*</sup>Corresponding author
